@@ -151,7 +151,6 @@ fn solve_pt_2() -> u32 {
         .last()
         .unwrap();
 
-
     winning_board_data.final_draw * winning_board_data.empty_cells
 }
 
@@ -184,6 +183,10 @@ mod tests {
     #[test]
     fn print_day_4() {
         println!("The final score on the winning board is {}", solve_pt_1());
-        println!("The final score of the last board to win is {}", solve_pt_2());
+        println!(
+            "The final score of the last board to win is {}",
+            solve_pt_2()
+        );
     }
+
 }
